@@ -2,7 +2,7 @@
 function punchToWork(stringemployeeCode) {
     let workData = { employeeCode: stringemployeeCode }
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/punchToWork',
+        url: 'http://localhost:8080/api/punchToWork',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -35,7 +35,7 @@ function punchToWork(stringemployeeCode) {
 function getWorkInfoListToday(stringemployeeCode) {
     let workData = { employeeCode: stringemployeeCode }
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/getWorkInfoListToday',
+        url: 'http://localhost:8080/api/getWorkInfoListToday',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -74,7 +74,7 @@ function getWorkInfoListToday(stringemployeeCode) {
 function punchToOffWork(uuid, stringemployeeCode) {
     let workData = { uuid: uuid, employeeCode: stringemployeeCode }
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/punchToOffWork',
+        url: 'http://localhost:8080/api/punchToOffWork',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -117,7 +117,7 @@ function punchToOffWork(uuid, stringemployeeCode) {
 function searchWorkInfoForStaff(stringemployeeCode, startDate, endDate) {
     let workData = { employeeCode: stringemployeeCode, searchStartDate: startDate, searchEndDate: endDate }
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/searchWorkInfoForStaff',
+        url: 'http://localhost:8080/api/searchWorkInfoForStaff',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -174,7 +174,7 @@ function searchWorkInfoForStaff(stringemployeeCode, startDate, endDate) {
 function searchWorkInfoForManager(stringemployeeCode, startDate, endDate, managerEmployeeCode) {
     let workData = { employeeCode: stringemployeeCode, searchStartDate: startDate, searchEndDate: endDate, managerEmployeeCode: managerEmployeeCode }
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/searchWorkInfoForManager',
+        url: 'http://localhost:8080/api/searchWorkInfoForManager',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -265,7 +265,7 @@ function searchWorkInfoForManager(stringemployeeCode, startDate, endDate, manage
 function creatAbsenteeismForManager(stringemployeeCode, absenteeismDate, managerEmployeeCode) {
     let workData = { employeeCode: stringemployeeCode, absenteeismDate: absenteeismDate, managerEmployeeCode: managerEmployeeCode }
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/creatAbsenteeismForManager',
+        url: 'http://localhost:8080/api/creatAbsenteeismForManager',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -297,7 +297,7 @@ function creatAbsenteeismForManager(stringemployeeCode, absenteeismDate, manager
 function getWorkInfoListAbsenteeism(stringemployeeCode, absenteeismDate, managerEmployeeCode) {
     let workData = { employeeCode: stringemployeeCode, absenteeismDate: absenteeismDate, managerEmployeeCode: managerEmployeeCode }
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/getWorkInfoListAbsenteeism',
+        url: 'http://localhost:8080/api/getWorkInfoListAbsenteeism',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -339,7 +339,7 @@ function deleteAbsenteeismForManager(uuid, stringemployeeCode, managerEmployeeCo
     let workData = { uuid: uuid, employeeCode: stringemployeeCode, managerEmployeeCode: managerEmployeeCode }
     // alert(uuid)
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/deleteAbsenteeismForManager',
+        url: 'http://localhost:8080/api/deleteAbsenteeismForManager',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -383,7 +383,7 @@ function deleteWorkInfoByDateBetween(startDate, endDate, password) {
     let workData = { searchStartDate: startDate, searchEndDate: endDate, password: password }
 
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/deleteWorkInfoByDateBetween',
+        url: 'http://localhost:8080/api/deleteWorkInfoByDateBetween',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -425,7 +425,7 @@ function updeateWorkOffTimeForManager(uuid, offWorkTime) {
     let workData = { uuid: uuid, offWorkTime: offWorkTime }
     let managerName = $('#managerEmployeeCode').val()
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/updeateWorkOffTimeForManager',
+        url: 'http://localhost:8080/api/updeateWorkOffTimeForManager',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -450,7 +450,7 @@ function updeateWorkOffTimeForManager(uuid, offWorkTime) {
 function employeeCodeLogin(stringemployeeCode) {
     let workData = { employeeCode: stringemployeeCode }
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/employeeCodeLogin',
+        url: 'http://localhost:8080/api/employeeCodeLogin',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -479,7 +479,7 @@ function forgotToPunchCard(managerEmployeeCode, employeeCode, punchWorkTime, off
     let workData = { employeeCode: employeeCode, managerEmployeeCode: managerEmployeeCode, punchWorkTime: punchWorkTime, offWorkTime: offWorkTime }
     //jquery語法
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/forgotToPunchCard',
+        url: 'http://localhost:8080/api/forgotToPunchCard',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',

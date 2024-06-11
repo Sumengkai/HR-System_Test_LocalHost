@@ -2,7 +2,7 @@ function readEmployeeInfo(epCode) {
     let objPostData = { employee_code: epCode }
 
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/read_employee_info',
+        url: 'http://localhost:8080/api/read_employee_info',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -38,7 +38,7 @@ function deleteEmployeeInfo(epCode) {
     let objPostData = { employee_code: epCode }
 
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/delete_employee_info',
+        url: 'http://localhost:8080/api/delete_employee_info',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -82,7 +82,7 @@ function updateEmployeeInfo(epCode, epName, epId, epEmail, epSet, epTt, epSit) {
     }
 
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/update_employee_info',
+        url: 'http://localhost:8080/api/update_employee_info',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -128,7 +128,7 @@ function createEmployeeInfo(epCode, epName, epId, epEmail, epSet, epTt, epSit) {
     }
 
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/create_employee_info',
+        url: 'http://localhost:8080/api/create_employee_info',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',

@@ -2,7 +2,7 @@
 function punchToWork(stringemployeeCode) {
     let workData = { employeeCode: stringemployeeCode }
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/punchToWork',
+        url: 'http://localhost:8080/api/punchToWork',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -34,7 +34,7 @@ function punchToWork(stringemployeeCode) {
 function getWorkInfoListToday(stringemployeeCode) {
     let workData = { employeeCode: stringemployeeCode }
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/getWorkInfoListToday',
+        url: 'http://localhost:8080/api/getWorkInfoListToday',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -71,7 +71,7 @@ function getWorkInfoListToday(stringemployeeCode) {
 function punchToOffWork(uuid, stringemployeeCode) {
     let workData = { uuid: uuid, employeeCode: stringemployeeCode }
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/punchToOffWork',
+        url: 'http://localhost:8080/api/punchToOffWork',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -114,7 +114,7 @@ function punchToOffWork(uuid, stringemployeeCode) {
 function searchWorkInfoForStaff(stringemployeeCode, startDate, endDate) {
     let workData = { employeeCode: stringemployeeCode, searchStartDate: startDate, searchEndDate: endDate }
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/searchWorkInfoForStaff',
+        url: 'http://localhost:8080/api/searchWorkInfoForStaff',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -169,7 +169,7 @@ function searchWorkInfoForStaff(stringemployeeCode, startDate, endDate) {
 function employeeCodeLogin(stringemployeeCode) {
     let workData = { employeeCode: stringemployeeCode }
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/employeeCodeLogin',
+        url: 'http://localhost:8080/api/employeeCodeLogin',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',

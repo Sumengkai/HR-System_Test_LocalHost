@@ -2,7 +2,7 @@
 function creatSalarySystem(employeeCode, salaryDate, salaryEmployeeCode) {
     let salaryData = { employeeCode: employeeCode, salaryDate: salaryDate, salaryEmployeeCode: salaryEmployeeCode }
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/creatSalarySystem',
+        url: 'http://localhost:8080/api/creatSalarySystem',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -47,7 +47,7 @@ function searchSalarySystemForStaff(employeeCode, startDate, endDate) {
     $('#startDate').empty()
     $('#endDate').empty()
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/searchSalarySystemForStaff',
+        url: 'http://localhost:8080/api/searchSalarySystemForStaff',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -82,7 +82,7 @@ function searchSalarySystemForStaff(employeeCode, startDate, endDate) {
 function salarySystemEmployeeCodeLogin(stringemployeeCode) {
     let salaryData = { employeeCode: stringemployeeCode }
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/salarySystemEmployeeCodeLogin',
+        url: 'http://localhost:8080/api/salarySystemEmployeeCodeLogin',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',

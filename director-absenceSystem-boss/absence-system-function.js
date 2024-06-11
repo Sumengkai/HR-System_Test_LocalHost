@@ -8,7 +8,7 @@ function addAbsence(startDate, endDate, epEmail, epReason, epStr) {
     }
 
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/addAbsences',
+        url: 'http://localhost:8080/api/addAbsences',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -37,7 +37,7 @@ function addAbsence(startDate, endDate, epEmail, epReason, epStr) {
 function getManagerEmailByEmployeeCode() {
 
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/getManagerEmailByEmployeeCode',
+        url: 'http://localhost:8080/api/getManagerEmailByEmployeeCode',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -72,7 +72,7 @@ function getManagerEmailByEmployeeCode() {
 function getAllAbsenceByEmployeeCode() {
 
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/getAbsenceByEmployeeCode',
+        url: 'http://localhost:8080/api/getAbsenceByEmployeeCode',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -118,7 +118,7 @@ function getAllAbsenceByEmployeeCodeAndDate(abYear, abMonth) {
         month: abMonth,
     }
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/getAbsenceByEmployeeCodeAndDate',
+        url: 'http://localhost:8080/api/getAbsenceByEmployeeCodeAndDate',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -158,7 +158,7 @@ function getAllAbsenceByEmployeeCodeAndDate(abYear, abMonth) {
 function getAbsenceBySectionAndLevel() {
 
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/getAbsenceBySectionAndLevel',
+        url: 'http://localhost:8080/api/getAbsenceBySectionAndLevel',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -207,7 +207,7 @@ function getAbsenceBySectionAndLevel() {
 function getAllAbsenceByEmployeeCodeDelete() {
 
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/getAbsenceByEmployeeCode',
+        url: 'http://localhost:8080/api/getAbsenceByEmployeeCode',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -259,7 +259,7 @@ function managerCheckYesOrNo(uuid, yesOrNo) {
 
 
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/checkYesOrNo',
+        url: 'http://localhost:8080/api/checkYesOrNo',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -288,7 +288,7 @@ function deleteAbsence(uuid) {
 
 
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/deleteAbsence',
+        url: 'http://localhost:8080/api/deleteAbsence',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -313,7 +313,7 @@ function deleteAbsence(uuid) {
 function getAllAbsenceByEmployeeCodeUpdate() {
 
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/getAbsenceByEmployeeCode',
+        url: 'http://localhost:8080/api/getAbsenceByEmployeeCode',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
@@ -363,7 +363,7 @@ function updateAbsence(uuid, epDate, epReason) {
 
 
     $.ajax({
-        url: 'https://hr-system-test-02.onrender.com/api/updateAbsence',
+        url: 'http://localhost:8080/api/updateAbsence',
         method: 'POST',
         contentType: 'application/json',
         dataType: 'json',
